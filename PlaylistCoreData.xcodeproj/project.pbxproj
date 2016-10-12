@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CF47326F1DADEEB800EAEF51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */; };
-		CF4732711DADEEB800EAEF51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732701DADEEB800EAEF51 /* ViewController.swift */; };
 		CF4732741DADEEB800EAEF51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4732721DADEEB800EAEF51 /* Main.storyboard */; };
 		CF4732771DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF4732751DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld */; };
 		CF4732791DADEEB800EAEF51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4732781DADEEB800EAEF51 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CF47326B1DADEEB800EAEF51 /* PlaylistCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF4732701DADEEB800EAEF51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF4732731DADEEB800EAEF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF4732761DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlaylistCoreData.xcdatamodel; sourceTree = "<group>"; };
 		CF4732781DADEEB800EAEF51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */,
-				CF4732701DADEEB800EAEF51 /* ViewController.swift */,
 				CF4732721DADEEB800EAEF51 /* Main.storyboard */,
 				CF4732781DADEEB800EAEF51 /* Assets.xcassets */,
 				CF47327A1DADEEB800EAEF51 /* LaunchScreen.storyboard */,
@@ -259,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4732711DADEEB800EAEF51 /* ViewController.swift in Sources */,
 				CF47326F1DADEEB800EAEF51 /* AppDelegate.swift in Sources */,
 				CF4732771DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld in Sources */,
 			);
