@@ -15,6 +15,11 @@
 		CF4732871DADEEB900EAEF51 /* PlaylistCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732861DADEEB900EAEF51 /* PlaylistCoreDataTests.swift */; };
 		CF4732921DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732911DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift */; };
 		CF4732A01DADF26100EAEF51 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47329F1DADF26100EAEF51 /* Stack.swift */; };
+		CF4732A51DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A11DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift */; };
+		CF4732A61DAE03BE00EAEF51 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A21DAE03BE00EAEF51 /* Playlist.swift */; };
+		CF4732A71DAE03BE00EAEF51 /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A31DAE03BE00EAEF51 /* Song+CoreDataProperties.swift */; };
+		CF4732A81DAE03BE00EAEF51 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A41DAE03BE00EAEF51 /* Song.swift */; };
+		CF4732AD1DAE0A0E00EAEF51 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		CF4732911DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCoreDataUITests.swift; sourceTree = "<group>"; };
 		CF4732931DADEEB900EAEF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF47329F1DADF26100EAEF51 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		CF4732A11DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Playlist+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF4732A21DAE03BE00EAEF51 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CF4732A31DAE03BE00EAEF51 /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF4732A41DAE03BE00EAEF51 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,10 @@
 		CF47326D1DADEEB800EAEF51 /* PlaylistCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */,
-				CF4732721DADEEB800EAEF51 /* Main.storyboard */,
-				CF47329F1DADF26100EAEF51 /* Stack.swift */,
-				CF4732781DADEEB800EAEF51 /* Assets.xcassets */,
-				CF47327A1DADEEB800EAEF51 /* LaunchScreen.storyboard */,
-				CF47327D1DADEEB800EAEF51 /* Info.plist */,
-				CF4732751DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld */,
+				CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */,
+				CF4732A91DAE03C600EAEF51 /* ModelObjects */,
+				CF4732AA1DAE03F200EAEF51 /* Storyboards */,
+				CF4732AB1DAE040300EAEF51 /* Core */,
 			);
 			path = PlaylistCoreData;
 			sourceTree = "<group>";
@@ -126,6 +133,38 @@
 				CF4732931DADEEB900EAEF51 /* Info.plist */,
 			);
 			path = PlaylistCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		CF4732A91DAE03C600EAEF51 /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				CF4732A11DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift */,
+				CF4732A21DAE03BE00EAEF51 /* Playlist.swift */,
+				CF4732A31DAE03BE00EAEF51 /* Song+CoreDataProperties.swift */,
+				CF4732A41DAE03BE00EAEF51 /* Song.swift */,
+			);
+			name = ModelObjects;
+			sourceTree = "<group>";
+		};
+		CF4732AA1DAE03F200EAEF51 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF4732721DADEEB800EAEF51 /* Main.storyboard */,
+				CF47327A1DADEEB800EAEF51 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF4732AB1DAE040300EAEF51 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */,
+				CF47329F1DADF26100EAEF51 /* Stack.swift */,
+				CF4732781DADEEB800EAEF51 /* Assets.xcassets */,
+				CF47327D1DADEEB800EAEF51 /* Info.plist */,
+				CF4732751DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4732A81DAE03BE00EAEF51 /* Song.swift in Sources */,
+				CF4732AD1DAE0A0E00EAEF51 /* PlaylistController.swift in Sources */,
+				CF4732A71DAE03BE00EAEF51 /* Song+CoreDataProperties.swift in Sources */,
 				CF47326F1DADEEB800EAEF51 /* AppDelegate.swift in Sources */,
 				CF4732A01DADF26100EAEF51 /* Stack.swift in Sources */,
 				CF4732771DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld in Sources */,
+				CF4732A51DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift in Sources */,
+				CF4732A61DAE03BE00EAEF51 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +530,7 @@
 				CF4732981DADEEB900EAEF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF4732991DADEEB900EAEF51 /* Build configuration list for PBXNativeTarget "PlaylistCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +539,7 @@
 				CF47329B1DADEEB900EAEF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF47329C1DADEEB900EAEF51 /* Build configuration list for PBXNativeTarget "PlaylistCoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +548,7 @@
 				CF47329E1DADEEB900EAEF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
