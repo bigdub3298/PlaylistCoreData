@@ -14,6 +14,7 @@
 		CF47327C1DADEEB800EAEF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF47327A1DADEEB800EAEF51 /* LaunchScreen.storyboard */; };
 		CF4732871DADEEB900EAEF51 /* PlaylistCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732861DADEEB900EAEF51 /* PlaylistCoreDataTests.swift */; };
 		CF4732921DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732911DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift */; };
+		CF4732A01DADF26100EAEF51 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47329F1DADF26100EAEF51 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CF47328D1DADEEB900EAEF51 /* PlaylistCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4732911DADEEB900EAEF51 /* PlaylistCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCoreDataUITests.swift; sourceTree = "<group>"; };
 		CF4732931DADEEB900EAEF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF47329F1DADF26100EAEF51 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				CF47326E1DADEEB800EAEF51 /* AppDelegate.swift */,
 				CF4732721DADEEB800EAEF51 /* Main.storyboard */,
+				CF47329F1DADF26100EAEF51 /* Stack.swift */,
 				CF4732781DADEEB800EAEF51 /* Assets.xcassets */,
 				CF47327A1DADEEB800EAEF51 /* LaunchScreen.storyboard */,
 				CF47327D1DADEEB800EAEF51 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF47326F1DADEEB800EAEF51 /* AppDelegate.swift in Sources */,
+				CF4732A01DADF26100EAEF51 /* Stack.swift in Sources */,
 				CF4732771DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
