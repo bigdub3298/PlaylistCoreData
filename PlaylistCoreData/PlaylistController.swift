@@ -7,13 +7,25 @@
 //
 
 import Foundation
+import CoreData
 
 class PlaylistController {
     static let sharedController = PlaylistController()
     
+    var playlists: [Playlist] {
+        let request = NSFetchRequest(entityName: Playlist.className)
+        
+        let moc = Stack.sharedStack.managedObjectContext
+        
+        do {
+            return try moc.executeFetchRequest(request) as! [Playlist]
+        } catch {
+            return []
+        }
+    }
     // Create 
     func addPlaylist(name: String) {
-        let _ = addPlaylist(name)
+        let _ = Playlist(name: name)
         
         Stack.saveToPersistentStore()
     }
@@ -26,10 +38,19 @@ class PlaylistController {
         }
     }
     
-    // Add Song to playlist 
-    func addSong(name: String, artist: String, playlist: Playlist) {
+    // Add Song
+    func addSongToPlaylist(name: String, artist: String, playlist: Playlist) {
         let _ = Song(name: name, artist: artist, playlist: playlist)
+        
         Stack.saveToPersistentStore()
+    }
+    
+    // Remove Song
+    func removeSongFromPlaylist(song: Song) {
+        if let moc = song.managedObjectContext {
+            moc.deleteObject(song)
+            Stack.saveToPersistentStore()
+        }
     }
     
 }

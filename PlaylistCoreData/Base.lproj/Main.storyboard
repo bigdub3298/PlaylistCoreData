@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eLc-yh-7Jv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--Playlists-->
         <scene sceneID="QO8-9y-gSQ">
             <objects>
-                <viewController id="Kqz-6A-t1E" sceneMemberID="viewController">
+                <viewController id="Kqz-6A-t1E" customClass="PlaylistViewController" customModule="PlaylistCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3u9-1q-rkr"/>
                         <viewControllerLayoutGuide type="bottom" id="teg-3U-X5I"/>
@@ -24,6 +24,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Kqz-6A-t1E" id="IJM-vH-xM8"/>
+                                        </connections>
                                     </textField>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="czz-eC-4z7">
                                         <rect key="frame" x="0.0" y="30" width="600" height="506"/>
@@ -57,6 +60,10 @@
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Kqz-6A-t1E" id="xNy-EC-v4c"/>
+                                            <outlet property="delegate" destination="Kqz-6A-t1E" id="gP3-uC-O03"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -70,8 +77,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="dbb-ua-xIA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hhV-Kc-BKD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hhV-Kc-BKD">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Kqz-6A-t1E" id="HJw-rm-Ee1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="hhV-Kc-BKD" id="gLF-7D-JSi"/>
+                        <outlet property="nameTextField" destination="HmS-GL-SAo" id="Zcd-Re-a6K"/>
+                        <outlet property="tableView" destination="czz-eC-4z7" id="R2j-Cd-bzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqh-0v-LIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +96,7 @@
         <!--Playlist Name-->
         <scene sceneID="p2F-KP-qCI">
             <objects>
-                <viewController id="0Db-kY-6Bk" sceneMemberID="viewController">
+                <viewController id="0Db-kY-6Bk" customClass="PlaylistDetailViewController" customModule="PlaylistCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1f0-n9-38f"/>
                         <viewControllerLayoutGuide type="bottom" id="KqZ-ez-52q"/>
@@ -96,11 +112,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="0Db-kY-6Bk" id="CtM-m4-vz5"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="artist name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6t-mJ-7Xd">
                                         <rect key="frame" x="0.0" y="30" width="600" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="0Db-kY-6Bk" id="mQs-6H-ahK"/>
+                                        </connections>
                                     </textField>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-7E-Lqx">
                                         <rect key="frame" x="0.0" y="60" width="600" height="476"/>
@@ -131,6 +153,10 @@
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="0Db-kY-6Bk" id="53D-0K-7W7"/>
+                                            <outlet property="delegate" destination="0Db-kY-6Bk" id="wcF-0K-RpR"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -144,8 +170,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlist Name" id="g0r-ap-KZ2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EIn-qB-YXm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EIn-qB-YXm">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="0Db-kY-6Bk" id="RTr-QR-6oH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="EIn-qB-YXm" id="yF6-KQ-UAb"/>
+                        <outlet property="artistTextField" destination="P6t-mJ-7Xd" id="soD-rr-cWm"/>
+                        <outlet property="songTextField" destination="bOe-Yp-MiD" id="SqS-Gw-YM2"/>
+                        <outlet property="tableView" destination="WgL-7E-Lqx" id="lsd-cN-aF6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZA-ZD-cob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
