@@ -20,6 +20,8 @@
 		CF4732A71DAE03BE00EAEF51 /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A31DAE03BE00EAEF51 /* Song+CoreDataProperties.swift */; };
 		CF4732A81DAE03BE00EAEF51 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732A41DAE03BE00EAEF51 /* Song.swift */; };
 		CF4732AD1DAE0A0E00EAEF51 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */; };
+		CF4732B01DAEEE0800EAEF51 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732AF1DAEEE0800EAEF51 /* PlaylistViewController.swift */; };
+		CF4732B31DAEF4D200EAEF51 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4732B21DAEF4D200EAEF51 /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CF4732A31DAE03BE00EAEF51 /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CF4732A41DAE03BE00EAEF51 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		CF4732AF1DAEEE0800EAEF51 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		CF4732B21DAEF4D200EAEF51 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,8 @@
 		CF47326D1DADEEB800EAEF51 /* PlaylistCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */,
+				CF4732B11DAEEE0D00EAEF51 /* ViewControllers */,
+				CF4732AE1DAEEDE300EAEF51 /* ModelControllers */,
 				CF4732A91DAE03C600EAEF51 /* ModelObjects */,
 				CF4732AA1DAE03F200EAEF51 /* Storyboards */,
 				CF4732AB1DAE040300EAEF51 /* Core */,
@@ -165,6 +170,23 @@
 				CF4732751DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		CF4732AE1DAEEDE300EAEF51 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF4732AC1DAE0A0E00EAEF51 /* PlaylistController.swift */,
+			);
+			name = ModelControllers;
+			sourceTree = "<group>";
+		};
+		CF4732B11DAEEE0D00EAEF51 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF4732B21DAEF4D200EAEF51 /* PlaylistDetailViewController.swift */,
+				CF4732AF1DAEEE0800EAEF51 /* PlaylistViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +323,10 @@
 				CF4732A81DAE03BE00EAEF51 /* Song.swift in Sources */,
 				CF4732AD1DAE0A0E00EAEF51 /* PlaylistController.swift in Sources */,
 				CF4732A71DAE03BE00EAEF51 /* Song+CoreDataProperties.swift in Sources */,
+				CF4732B31DAEF4D200EAEF51 /* PlaylistDetailViewController.swift in Sources */,
 				CF47326F1DADEEB800EAEF51 /* AppDelegate.swift in Sources */,
 				CF4732A01DADF26100EAEF51 /* Stack.swift in Sources */,
+				CF4732B01DAEEE0800EAEF51 /* PlaylistViewController.swift in Sources */,
 				CF4732771DADEEB800EAEF51 /* PlaylistCoreData.xcdatamodeld in Sources */,
 				CF4732A51DAE03BE00EAEF51 /* Playlist+CoreDataProperties.swift in Sources */,
 				CF4732A61DAE03BE00EAEF51 /* Playlist.swift in Sources */,
